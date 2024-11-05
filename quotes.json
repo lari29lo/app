@@ -1,0 +1,18 @@
+[
+    {
+      "author": "Albert Einstein",
+      "quote": "A vida é como andar de bicicleta. Para manter o equilíbrio, você deve continuar em movimento.",
+      "image": "/images/albert_einstein.png"
+    },
+    {
+      "author": "Steve Jobs",
+      "quote": "A única maneira de fazer um ótimo trabalho é amar o que você faz.",
+      "image": "/images/steve_jobs.png"
+    },
+    {
+      "author": "Oprah Winfrey",
+      "quote": "O maior desafio é ser você mesmo em um mundo que tenta fazer de você como todo mundo.",
+      "image": "/images/oprah.png"
+    }
+  ]
+  
