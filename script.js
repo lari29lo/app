@@ -1,28 +1,13 @@
-let count = 0;
 
-const countDisplay = document.getElementById("count");
-const incrementButton = document.getElementById("incrementButton");
-const decrementButton = document.getElementById("decrementButton");
-
-// Função para incrementar o contador
-function increment() {
-  count++;
-  updateDisplay();
-}
-
-// Função para decrementar o contador
-function decrement() {
-  if (count > 0) { // Evita contagem negativa
-    count--;
-    updateDisplay();
-  }
-}
-
-// Função para atualizar o display do contador
-function updateDisplay() {
-  countDisplay.textContent = count;
-}
-
-// Adiciona eventos aos botões
-incrementButton.addEventListener("click", increment);
-decrementButton.addEventListener("click", decrement);
+document.getElementById("breakCookieButton").addEventListener("click", async () => {
+    // Muda a imagem do biscoito para quebrado
+    document.getElementById("cookieImage").src = "../images/open_cookie.png";
+  
+    // Busca a frase de sorte da API
+    const response = await fetch('/fortune');
+    const data = await response.json();
+  
+    // Exibe a frase de sorte
+    document.getElementById("fortuneText").innerText = data.fortune;
+  });
+  
